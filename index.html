@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>MyList</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-7">
+          <div class="form-group" id="mm">
+            <label for="Task">Notes:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inpNewTask"
+              placeholder="Enter your text here!"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="row func">
+            <div class="col-4 col-sm-4 col-md-4 p-1">
+              <button class="btn btn-success col" onclick="add()">Add</button>
+            </div>
+
+            <div class="col-4 col-sm-4 col-md-4 p-1">
+              <button class="btn btn-danger col" onclick="reset()">
+                Reset
+              </button>
+            </div>
+
+            <div class="col-4 col-sm-4 col-md-4 p-1">
+              <button class="btn btn-warning col" onclick="clean()">
+                Cleanup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="row col-8 list-group" id="ulTasks"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

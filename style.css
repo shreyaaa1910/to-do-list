@@ -1,0 +1,13 @@
+.h1 {
+    justify-content: center;
+  }
+  #ulTasks {
+    margin-left: 20px;
+  }
+  .done {
+    color: #6c757d;
+    text-decoration: line-through;
+  }
+  .func {
+    margin-top: 28px;
+  }
